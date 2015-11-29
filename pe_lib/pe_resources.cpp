@@ -43,7 +43,7 @@ void resource_data_entry::set_data(const std::string& data)
 
 //Default constructor
 resource_directory_entry::includes::includes()
-	:data_(0)
+	:data_(nullptr)
 {}
 
 //Default constructor
@@ -98,7 +98,7 @@ void resource_directory_entry::release()
 		else
 			delete ptr_.dir_;
 
-		ptr_.data_ = 0;
+		ptr_.data_ = nullptr;
 	}
 }
 

@@ -81,7 +81,7 @@ pe_base::pe_base(const pe_base& pe)
 	has_overlay_(pe.has_overlay_),
 	full_headers_data_(pe.full_headers_data_),
 	debug_data_(pe.debug_data_),
-	props_(0)
+	props_(nullptr)
 {
 	props_ = pe.props_->duplicate().release();
 }
@@ -95,7 +95,7 @@ pe_base& pe_base::operator=(const pe_base& pe)
 	full_headers_data_ = pe.full_headers_data_;
 	debug_data_ = pe.debug_data_;
 	delete props_;
-	props_ = 0;
+	props_ = nullptr;
 	props_ = pe.props_->duplicate().release();
 
 	return *this;

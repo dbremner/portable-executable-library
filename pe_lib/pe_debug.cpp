@@ -155,13 +155,13 @@ debug_info& debug_info::operator=(const debug_info& info)
 
 //Default constructor
 debug_info::advanced_info::advanced_info()
-	:adv_pdb_7_0_info(0) //Zero pointer to advanced data
+	:adv_pdb_7_0_info(nullptr) //Zero pointer to advanced data
 {}
 
 //Returns true if advanced debug info is present
 bool debug_info::advanced_info::is_present() const
 {
-	return adv_pdb_7_0_info != 0;
+	return adv_pdb_7_0_info != nullptr;
 }
 
 //Helper for advanced debug information copying
@@ -211,7 +211,7 @@ void debug_info::free_present_advanced_info()
 		break;
 	}
 
-	advanced_debug_info_.adv_pdb_7_0_info = 0;
+	advanced_debug_info_.adv_pdb_7_0_info = nullptr;
 	advanced_info_type_ = advanced_info_none;
 }
 
