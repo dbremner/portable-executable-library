@@ -14,7 +14,7 @@ using namespace pe_bliss;
 //Пример, показывающий, как редактировать ресурсы PE-файла
 //Для начала рекомендуется ознакомиться с примером resource_viewer
 //Обратите внимание, что пример корректно отработает и в x86, и в x64 варианте
-int main(int argc, char* argv[])
+int main(int /*argc*/, char* argv[])
 {
 	std::string pe_filename;
 
