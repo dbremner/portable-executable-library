@@ -1,6 +1,7 @@
 #include <algorithm>
 #include <string.h>
 #include "pe_resources.h"
+#include <set>
 
 namespace pe_bliss
 {

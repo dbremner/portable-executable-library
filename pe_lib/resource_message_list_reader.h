@@ -1,5 +1,6 @@
 #pragma once
 #include "message_table.h"
+#include <map>
 
 namespace pe_bliss
 {
