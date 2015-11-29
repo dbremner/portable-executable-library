@@ -13,7 +13,7 @@
 //Please don't remove this information from header
 //PEBliss 1.0.0
 //(c) DX 2011 - 2012, http://kaimi.ru
-//Free to use for commertial and non-commertial purposes, modification and distribution
+//Free to use for commercial and non-commercial purposes, modification and distribution
 
 // == more important ==
 //TODO: compact import rebuilder
