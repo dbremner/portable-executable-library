@@ -235,22 +235,22 @@ public:
 };
 
 //Two used typedefs for PE32 (PE) and PE64 (PE+)
-typedef pe_types<pe_win::image_nt_headers32,
-	pe_win::image_optional_header32,
-	pe_win::image_nt_optional_hdr32_magic,
-	uint32_t,
-	pe_win::image_ordinal_flag32,
-	pe_win::image_tls_directory32,
-	pe_win::image_load_config_directory32> pe_types_class_32;
+	using pe_types_class_32 = pe_types<pe_win::image_nt_headers32,
+	                                   pe_win::image_optional_header32,
+	                                   pe_win::image_nt_optional_hdr32_magic,
+	                                   uint32_t,
+	                                   pe_win::image_ordinal_flag32,
+	                                   pe_win::image_tls_directory32,
+	                                   pe_win::image_load_config_directory32>;
 
-typedef pe_types<pe_win::image_nt_headers64,
-	pe_win::image_optional_header64,
-	pe_win::image_nt_optional_hdr64_magic,
-	uint64_t,
-	pe_win::image_ordinal_flag64,
-	pe_win::image_tls_directory64,
-	pe_win::image_load_config_directory64> pe_types_class_64;
+	using pe_types_class_64 = pe_types<pe_win::image_nt_headers64,
+	                                   pe_win::image_optional_header64,
+	                                   pe_win::image_nt_optional_hdr64_magic,
+	                                   uint64_t,
+	                                   pe_win::image_ordinal_flag64,
+	                                   pe_win::image_tls_directory64,
+	                                   pe_win::image_load_config_directory64>;
 
-typedef pe_properties_generic<pe_types_class_32> pe_properties_32;
-typedef pe_properties_generic<pe_types_class_64> pe_properties_64;
+	using pe_properties_32 = pe_properties_generic<pe_types_class_32>;
+	using pe_properties_64 = pe_properties_generic<pe_types_class_64>;
 }
