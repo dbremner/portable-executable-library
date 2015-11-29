@@ -1,7 +1,7 @@
 #pragma once
 #include <map>
 #include <string>
-#include "stdint_defs.h"
+#include <stdint.h>
 
 namespace pe_bliss
 {

@@ -96,7 +96,6 @@
     <ClInclude Include="resource_string_table_reader.h" />
     <ClInclude Include="resource_version_info_reader.h" />
     <ClInclude Include="resource_version_info_writer.h" />
-    <ClInclude Include="stdint_defs.h" />
     <ClInclude Include="utils.h" />
     <ClInclude Include="version_info_editor.h" />
     <ClInclude Include="version_info_types.h" />

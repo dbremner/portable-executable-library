@@ -1,7 +1,7 @@
 #pragma once
 #include <string>
 #include <sstream>
-#include "stdint_defs.h"
+#include <stdint.h>
 #if defined(_MSC_VER)
 #define PE_BLISS_WINDOWS
 #endif

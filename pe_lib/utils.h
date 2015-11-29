@@ -1,7 +1,7 @@
 #pragma once
 #include <istream>
 #include <string>
-#include "stdint_defs.h"
+#include <stdint.h>
 #include "pe_structures.h"
 
 namespace pe_bliss

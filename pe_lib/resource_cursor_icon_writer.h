@@ -1,7 +1,7 @@
 #pragma once
 #include <string>
 #include <vector>
-#include "stdint_defs.h"
+#include <stdint.h>
 #include "pe_resource_manager.h"
 
 namespace pe_bliss

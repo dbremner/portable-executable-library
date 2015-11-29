@@ -1,5 +1,5 @@
 #pragma once
-#include "stdint_defs.h"
+#include <stdint.h>
 
 namespace pe_bliss
 {
